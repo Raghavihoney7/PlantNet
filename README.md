@@ -1,6 +1,9 @@
-# PlantNet App
+# Leaf it to Us! - PlantNet App 
 
-PlantNet is a Flutter-based plant identification app that allows users to identify plants by uploading images. It also includes features like user authentication, plant history, and an about section.
+Ever looked at a plant and thought, "What on earth are you?" Worry not! PlantNet is here to branch out and help you identify plants with just a snap of a picture. No more guessing – just pure botanical brilliance!
+
+## Discover the World of Plants Around You!
+Use AI-powered plant identification to learn more about any plant instantly.
 
 ## Features
 
@@ -9,14 +12,19 @@ PlantNet is a Flutter-based plant identification app that allows users to identi
 - **User Dashboard**: View identified plants and user profile.
 - **Home Page**: Explore various plant-related insights.
 - **About Page**: Learn more about the app and its purpose.
+- **Future Features**:
+  - Implementation of a Machine Learning model for plant identification.
+  - Offline plant identification.
+  - Community-based plant database.
+  - Personalized plant care recommendations.
 
 ## Screenshots
 
-### Login Page
-![Login](login.png)
-
 ### Signup Page
 ![Signup](signup.png)
+
+### Login Page
+![Login](login.png)
 
 ### Home Page
 ![Home](home.png)
@@ -49,9 +57,7 @@ PlantNet is a Flutter-based plant identification app that allows users to identi
 ## Technologies Used
 - Flutter
 - Firebase Authentication
-- Machine Learning Model for Plant Identification
 
 ## Contribution
 Feel free to contribute! Fork the repository and submit a pull request.
-
 
