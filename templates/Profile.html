@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile page </title>
+</head>
+<body>
+<table style="border: 1px solid black; text-align:center; float:center">
+{% for i in name %}              <!-- this is for loops and statements , range = content name-->
+    <tr style="border: 1px solid black">
+    <td style="border: 0.5px solid black">{{i.name }}</td>            <!-- this is for print statements -->
+    <td style="border: 0.5px solid black">{{i.username}}</td>
+    <td style="border: 0.5px solid black">{{ i.email }} </td>
+    </tr>
+{% endfor %}
+    </table>
+</body>
+</html>

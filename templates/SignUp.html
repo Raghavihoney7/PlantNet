@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Plant Identifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to bottom, #e6f7e6, #ffffff, #c8e6c9);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .signup-container {
+            background: white;
+            padding: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+        }
+
+        .signup-container h2 {
+            color: #228B22;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .signup-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .signup-btn:hover {
+            background: darkgreen;
+        }
+
+        .or-separator {
+            margin: 15px 0;
+            font-weight: bold;
+            color: #666;
+        }
+
+        .google-signup {
+            margin-top: 3px;
+           padding: 12px 12px;
+            font-size: 16px;
+            background: #f4f4f4;
+            color: black;
+           border: 1px solid #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+           # display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .google-signup:hover {
+            background: #e0e0e0;
+        }
+
+        .google-icon {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .login-link {
+            margin-top: 15px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form id="signup-form" method="post" action="/users/SignUp">
+            {% csrf_token %}
+            <input type="text" id="full-name" class="input-field" placeholder="Full Name" required name="name">
+            <input type="email" id="email" class="input-field" placeholder="Email" required name="email">
+            <input type="text" id="username" class="input-field" placeholder="Username" required name="username">
+            <input type="password" id="password" class="input-field" placeholder="Password" required name="password">
+            <input type="password" id="confirm-password" class="input-field" placeholder="Confirm Password" required name="confirm_password">
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+        <div class="or-separator">or</div>
+        <button class="google-signup" onclick="googleSignup()">
+            <img src="https://w7.pngwing.com/pngs/882/225/png-transparent-google-logo-google-logo-google-search-icon-google-text-logo-business-thumbnail.png" alt="Google Logo" class="google-icon">
+            Sign Up with Google
+        </button>
+        <a href="#" class="login-link">Already have an account? Log in</a>
+    </div>
+</body>
+</html>
